@@ -1,21 +1,25 @@
-nilai=[]
-perulangan = True
+data=[]
 
-while perulangan:
-   nama=input('masukkan nama:')
-   nim=input('masukkan nim:')
-   tugas=input('masukkan nilai tugas:')
-   UTS=input('masukkan nilai UTS:')
-   UAS=input('masukkan nilai UAS:')
-   nilaiakhir=(int(tugas)*.30) + (int(UTS)*.35) + (int(UAS)*.35)
+while True:
+   nama =input('Masukkan nama             :')
+   nim =input('Masukkan NIM              :')
+   tugas=int(input('Masukkan nilai Tugas      :'))
+   uts = int(input('Masukkan nilai UTS        :'))
+   uas = int(input('Masukkan nilai UAS        :'))
+   nilaiakhir= (tugas * 30/100) + (uts * 35/100) + (uas * 35/100)
    
-   nilai.append([nama, nim, tugas, UTS, UAS, int(nilaiakhir)])
-   if(input('tambah data (y/t)?') == 't'):
-       perulangan = False
+   data.append([nama, nim, tugas, uts, uas, int(nilaiakhir)])
+   lagi = input ("Tambah lagi (y/t)?")
+   if(lagi =="t"):
+    break
 
+print ("========================|=======DATA MAHASISWA==========|==============================")
+print ("=======================================================================================")
+print ("| No |	 Nama 	|  NIM 	 |  TUGAS  |   UTS  |  UAS  |  NILAI AKHIR    |")
+print ("=======================================================================================")
 i=0
-for item in nilai:
-    i+= 1
-    print("|{no:2d}|{nama:12s}|{nim:9s}|{tugas:5d}|{UTS:5d}|{UAS:5d}|{nilaiakhir:6.2f}|"
-        .format(no=i, nama=item[0], nim=item[1], tugas=item[2], UTS=item[3], UAS=item[4], nilaiakhir=item[5]))
-
+for x in data:
+	i+=1
+	print("|{no:4d}| {nama:8s} | {nim:6s} | {tugas:7d} | {uts:6d} | {uas:5d} | {nilaiakhir:15.5f} |"
+		.format(no=i, nama=x[0], nim=x[1], tugas=x[2], uts=x[3], uas=x[4], nilaiakhir=x[5]))
+print ("=======================================================================================")
