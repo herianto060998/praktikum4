@@ -15,11 +15,11 @@ while True:
 
 print ("========================|=======DATA MAHASISWA==========|==============================")
 print ("=======================================================================================")
-print ("| No |	 Nama 	|  NIM 	 |  TUGAS  |   UTS  |  UAS  |  NILAI AKHIR    |")
+print ("| No |	 Nama 	|    NIM    |  TUGAS  |   UTS  |  UAS  |  NILAI AKHIR    |")
 print ("=======================================================================================")
 i=0
 for x in data:
 	i+=1
-	print("|{no:4d}| {nama:8s} | {nim:6s} | {tugas:7d} | {uts:6d} | {uas:5d} | {nilaiakhir:15.5f} |"
+	print("|{no:4d}| {nama:8s} | {nim:7s} | {tugas:7d} | {uts:6d} | {uas:5d} | {nilaiakhir:15.5f} |"
 		.format(no=i, nama=x[0], nim=x[1], tugas=x[2], uts=x[3], uas=x[4], nilaiakhir=x[5]))
 print ("=======================================================================================")

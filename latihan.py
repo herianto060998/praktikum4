@@ -1,6 +1,7 @@
 print("Membuat List dengan 5 elemen")
 daftar = [9, 7, 5, 6, 8]
 print(daftar)
+
 # Akses List
 print("Menampilkan elemen ke 3")
 print(daftar[2])
