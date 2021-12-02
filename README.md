@@ -32,6 +32,9 @@ Didalam source code atau soal tersebut menunjukkan bahwa sistem harus menampilka
 Berikut hasil setelah saya menginputkan 2 Data Nila Mahasiswa:
 ![gambar8](ss/ss8.png.png)
 
+Berikut flowchart dari program tersebut<p>
+![gambar9](ss/ss9.png.png)
+
 - Pertama kita membuat variable list kosong. data = [] ulang = True<p>
 Variable ulang = True digunakan untuk mengontrol perulangan<p>
 
@@ -55,9 +58,9 @@ print ("| No |	 Nama 	|    NIM    |  TUGAS  |   UTS  |  UAS  |  NILAI AKHIR    |
 print ("=======================================================================================")<p>
 i=0<p>
 for x in data:<p>
-	i+=1 <p>
-	print("|{no:4d}| {nama:8s} | {nim:7s} | {tugas:7d} | {uts:6d} | {uas:5d} | {nilaiakhir:15.5f} |"<p>
-		.format(no=i, nama=x[0], nim=x[1], tugas=x[2], uts=x[3], uas=x[4], nilaiakhir=x[5]))<p>
+i+=1 <p>
+print("|{no:4d}| {nama:8s} | {nim:7s} | {tugas:7d} | {uts:6d} | {uas:5d} | {nilaiakhir:15.5f} |"<p>
+.format(no=i, nama=x[0], nim=x[1], tugas=x[2], uts=x[3], uas=x[4], nilaiakhir=x[5])) <p>
 print ("=======================================================================================")<p>
 
 
